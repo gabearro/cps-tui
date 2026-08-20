@@ -7,9 +7,9 @@
 when not defined(posix):
   {.error: "TUI requires POSIX terminal support (termios, SIGWINCH). Not available on Windows.".}
 
-import ../runtime
-import ../transform
-import ../eventloop
+import cps/runtime
+import cps/transform
+import cps/eventloop
 import std/[posix, termios, strutils]
 
 var SIGWINCH {.importc, header: "<signal.h>", nodecl.}: cint

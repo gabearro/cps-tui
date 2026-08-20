@@ -16,9 +16,9 @@
 ##     ...
 ##   runCps(app.run())
 
-import ../runtime
-import ../transform
-import ../eventloop
+import cps/runtime
+import cps/transform
+import cps/eventloop
 import ./style
 import ./cell
 import ./input
