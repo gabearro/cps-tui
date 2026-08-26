@@ -30,7 +30,7 @@ frame, and events flow back through explicit handlers.
 ## Install
 
 ```sh
-nimble install https://github.com/gabearro/cps-tui@#v1.0.0
+nimble install https://github.com/gabearro/cps-tui@#v1.0.1
 ```
 
 ## Counter application
@@ -132,7 +132,11 @@ of the framework.
 ```sh
 nimble install -d -y
 nimble test
+nimble testMms
 ```
+
+The library supports ARC, ORC, and AtomicARC. `nimble testMms` runs the
+same supported surface under all three memory managers.
 
 Tests cover styles, layout, rendering, components, mouse routing, drag behavior,
 focus management, and focus trapping.
